@@ -1,0 +1,61 @@
+%h1 {
+  font-family: Din, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+
+  text-transform: uppercase;
+}
+
+%h2 {
+  font-family: Din, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+
+%body-text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+%link {
+  font-size: 32px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.small-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.big-text {
+  font-family: Din, sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+body {
+  @extend %body-text
+}
+
+h1 {
+  @extend %h1;
+}
+
+h2 {
+  @extend %h2;
+}
+
+a {
+  @extend %link;
+}
