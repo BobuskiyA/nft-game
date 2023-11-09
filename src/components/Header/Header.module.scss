@@ -1,5 +1,40 @@
-@import "../../styles/global.scss";
-
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: $black;
+  height: 80px;
+  
+  &_list {
+    display: flex;
+    padding: 0 12px;
+
+    &_item {
+      border-top: 1px solid $black;
+      position: relative;
+    }
+  }
+  
+  &_link {
+    padding: 20px 10px;
+    display: block;
+    color: $white;
+    position: relative;
+
+    &::after{
+      content: "";
+      background: $white;
+      mix-blend-mode: exclusion;
+      width: 100%;
+      height: 0;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transition: all .2s ease;
+    }
+
+    &:hover::after{
+      height: calc(100% + 8px)
+    }
+  }
 }

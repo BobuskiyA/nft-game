@@ -1,7 +1,7 @@
 import React from 'react'
 import { Inter } from 'next/font/google'
 import '@/styles/global.scss'
-
+import '@/styles/reset.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
