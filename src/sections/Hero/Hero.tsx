@@ -1,5 +1,8 @@
 import FullWidthImage from "@/components/FullWidthImage/FullWidthImage";
-import HeroImage from "../../../public/images/Starfield-IntoTheStarfield_Wallpaper_3840x2160-01.jpg";
+import HeroImage from "../../../public/images/hero/backgroung.jpg";
+import AnchorLink from '@/components/AnchorLink/AnchorLink';
+import Image from 'next/image';
+
 import styles from "./Hero.module.scss";
 
 const Hero = () => {
@@ -17,15 +20,21 @@ const Hero = () => {
         <button className={styles.pop_up_button} />
 
         <div className={styles.download}>
-          <h2 className={`bold ${styles.download_title}`}>
+          <div className={styles.download_top}>
+            Has your application been approved yet?
+            <h2 className={`bold ${styles.download_title}`}>
             <span className={styles.download_title_blur}>Start</span>
             closed beta test
           </h2>
+          </div>
+          
 
           <button className={styles.download_button}>Start the engine</button>
 
           <p className={`bold ${styles.download_sub_title}`}>
-            WORLDWIDE RELEASE 09.06.2024
+            WORLDWIDE RELEASE
+            <br />
+            09.06.2024
           </p>
         </div>
 
@@ -34,16 +43,39 @@ const Hero = () => {
             <span className="bold">Solaris</span> Metaverse
           </h1>
 
-          <h2>
+          <h2 className={styles.about_sub_title}>
             Developed on Frostbite
           </h2>
-          <h2 className="bold">
+          <h2 className={`bold ${styles.about_sub_title_adding}`}>
             ONLY FOR PC
           </h2>
 
           <div className={styles.buttons}>
-            
+            <AnchorLink
+              toSection='#'
+              customClass={styles.about_link}
+            >
+              Game experience
+            </AnchorLink>
+            <AnchorLink
+              toSection='#'
+              customClass={styles.about_link}
+            >
+              Project information
+            </AnchorLink>
+            <AnchorLink
+              toSection='#'
+              customClass={styles.about_link_leviathan}
+            >
+              $100,000?
+            </AnchorLink>
           </div>
+        </div>
+
+        <div className={styles.bottom}>
+          <div
+            className={styles.planet}
+          />
         </div>
       </FullWidthImage>
     </section>

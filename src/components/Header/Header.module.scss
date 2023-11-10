@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: $black;
-  height: 80px;
+  height: 90px;
   
   &_list {
     display: flex;
@@ -37,4 +37,10 @@
       height: calc(100% + 8px)
     }
   }
+}
+
+.navigation {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }

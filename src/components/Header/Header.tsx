@@ -3,13 +3,14 @@ import { ScrollContext } from "@/helpers/scrollContext";
 import { ScrollProvider } from "@/helpers/scrollProvider";
 import HeaderContent from "@/data/HeaderContent.json";
 import styles from "./Header.module.scss";
+import Navigation from './Navigation/Navigation';
 
 const Header = () => {
   const scrollTo = useContext(ScrollContext);
 
   return (
     <header className={styles.header}>
-      <ul className={styles.header_list}>
+      {/* <ul className={styles.header_list}>
         {HeaderContent.map((currentLink) => (
           <li
             key={currentLink.title}
@@ -24,7 +25,11 @@ const Header = () => {
             </a>
           </li>
         ))}
-      </ul>
+      </ul> */}
+
+      <div className={styles.navigation}>
+        <Navigation />
+      </div>
 
       <ul className={styles.header_list}>
         <li className={styles.header_list_item}>
