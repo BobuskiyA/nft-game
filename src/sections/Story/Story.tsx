@@ -3,7 +3,7 @@ import styles from './Story.module.scss'
 
 const Story = () => {
   return (
-    <section>
+    <section id="story">
       <FullWidthBg
         type='video'
         url={'/videos/Game.mp4'}

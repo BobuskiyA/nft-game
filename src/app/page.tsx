@@ -5,6 +5,7 @@ import Hero from '@/sections/Hero/Hero'
 import AboutProject from '@/sections/AboutProject/AboutProject'
 import Story from '@/sections/Story/Story'
 import Future from '@/sections/Future/Future'
+import RoadMap from '@/pages/RoadMap/RoadMap'
 
 export default function Home() {
 
@@ -13,11 +14,17 @@ export default function Home() {
       <main id="js-scroll">
         <Header />
 
-        <Hero />
-        <Future/>
-        <AboutProject />
+        {false && (
+          <>
+          <Hero />
+          <Future/>
+          <AboutProject />
 
-        <Story />
+          <Story />
+          </>
+        )}
+
+        <RoadMap />
       </main>
     </ScrollProvider>
   )

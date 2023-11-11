@@ -52,19 +52,19 @@ const Hero = () => {
 
           <div className={styles.buttons}>
             <AnchorLink
-              toSection='#'
+              toSection='about-project'
               customClass={styles.about_link}
             >
               Game experience
             </AnchorLink>
             <AnchorLink
-              toSection='#'
+              toSection='story'
               customClass={styles.about_link}
             >
               Project information
             </AnchorLink>
             <AnchorLink
-              toSection='#'
+              toSection=''
               customClass={styles.about_link_leviathan}
             >
               $100,000?

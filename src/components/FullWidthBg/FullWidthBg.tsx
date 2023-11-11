@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import { FC, ReactNode } from "react";
+import { FC, ReactNode, forwardRef, ForwardedRef } from "react";
 import styles from "./FullWidthBg.module.scss";
 
 type Props = {
@@ -11,14 +11,15 @@ type Props = {
   type?: "video" | "image";
 };
 
-const FullWidthBg: FC<Props> = ({
+const FullWidthBg = forwardRef<HTMLDivElement, Props>(({
   url,
   alt,
   children,
   customClass = "",
   classSection = "",
   type = "image",
-}) => {
+  ...props
+}, ref) => {
   const classForBg = customClass
     ? `${styles.image} ${customClass}`
     : `${styles.image}`;
@@ -27,7 +28,7 @@ const FullWidthBg: FC<Props> = ({
     : `${styles.full_width_image}`;
 
   return (
-    <div className={classForSection}>
+    <div className={classForSection} ref={ref} {...props}>
       {type === "video" && typeof url === "string" ? (
         <video
           loop
@@ -48,6 +49,8 @@ const FullWidthBg: FC<Props> = ({
       {children}
     </div>
   );
-};
+});
+
+FullWidthBg.displayName = 'FullWidthBg';
 
 export default FullWidthBg;

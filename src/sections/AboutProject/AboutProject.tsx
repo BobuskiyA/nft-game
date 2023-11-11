@@ -3,7 +3,7 @@ import styles from './AboutProject.module.scss'
 
 const AboutProject = () => {
   return (
-    <section>
+    <section id="about-project">
       <FullWidthBg
         type='video'
         url={'/videos/AboutProject.mp4'}

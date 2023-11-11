@@ -12,8 +12,8 @@ const AnchorLink: FC<Props> = ({ toSection, children, customClass }) => {
 
   return (
     <a
-      href={`#${toSection}`}
-      onClick={(event) => scrollTo(event, `#${toSection}`)}
+      href={toSection}
+      onClick={(event) => scrollTo(event,toSection)}
       className={customClass}
     >
       {children}
