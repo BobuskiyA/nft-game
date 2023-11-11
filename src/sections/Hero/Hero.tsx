@@ -1,4 +1,4 @@
-import FullWidthImage from "@/components/FullWidthImage/FullWidthImage";
+import FullWidthBg from "@/components/FullWidthBg/FullWidthBg";
 import HeroImage from "../../../public/images/hero/backgroung.jpg";
 import AnchorLink from '@/components/AnchorLink/AnchorLink';
 import Image from 'next/image';
@@ -8,8 +8,8 @@ import styles from "./Hero.module.scss";
 const Hero = () => {
   return (
     <section>
-      <FullWidthImage
-        image={HeroImage}
+      <FullWidthBg
+        url={HeroImage}
         alt="hero"
         classSection={styles.hero}
       >
@@ -77,7 +77,7 @@ const Hero = () => {
             className={styles.planet}
           />
         </div>
-      </FullWidthImage>
+      </FullWidthBg>
     </section>
   );
 };

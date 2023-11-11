@@ -2,6 +2,7 @@
 import Header from '@/components/Header/Header'
 import { ScrollProvider } from '../helpers/scrollProvider'
 import Hero from '@/sections/Hero/Hero'
+import AboutProject from '@/sections/AboutProject/AboutProject'
 
 export default function Home() {
 
@@ -11,6 +12,8 @@ export default function Home() {
         <Header />
 
         <Hero />
+
+        <AboutProject />
       </main>
     </ScrollProvider>
   )
