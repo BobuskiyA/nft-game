@@ -5,6 +5,7 @@ module.exports = nextConfig
 
 module.exports = {
   sassOptions: {
-    prependData: `@import "src/styles/utils/_variables.scss";`
+    prependData: `@import "src/styles/utils/_variables.scss";
+                  @import "src/styles/utils/_mixins.scss";`
   }
 }

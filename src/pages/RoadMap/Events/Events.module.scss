@@ -1,0 +1,36 @@
+.event_card {
+  display: flex;
+  align-items: center;
+  height: 580px; 
+}
+
+.title {
+  color: $dark-grey;
+  letter-spacing: 13px;
+  text-align: center;
+  margin: 50px 0 20px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 90px;
+  text-align: center;
+  color: $black;
+}
+
+.main_text {
+  max-width: 440px;
+}
+
+.date_event {
+  margin-bottom: 8px;
+  padding: 0 18px 8px;
+  border-bottom: 1px solid $black;
+}
+
+.type_event {
+  mix-blend-mode: overlay;
+  
+}

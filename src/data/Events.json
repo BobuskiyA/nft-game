@@ -1,0 +1,26 @@
+[
+  {
+    "id": "invasion",
+    "title": "Invasion",
+    "date": "15.12.23",
+    "type": "Event",
+    "leftText": "Rally your forces and gather with other explorers to defend the Solaris universe and stop the invasion of forces from beyond.",
+    "rigthText": "More than a hundred planets will become locations for endless battle, and at the end of the event, worthy rewards await you!"
+  },
+  {
+    "id": "new-year",
+    "title": "New Year 2024",
+    "date": "28.12.23",
+    "type": " Event",
+    "leftText": "Take part in a raid dedicated to the New Year and receive rewards in the form of achievements and rare resources!",
+    "rigthText": "Celebrate, have fun, welcome the New Year 2024 in the company of friends in the Solaris universe!"
+  },
+  {
+    "id": "pet",
+    "title": "Pet?",
+    "date": "15.01.24",
+    "type": "Event",
+    "leftText": "Introducing companion pets into the project that will increase your characteristics and relieve you of loneliness in cold space",
+    "rigthText": "Dogs, cats, and some with tentacles!"
+  }
+]
