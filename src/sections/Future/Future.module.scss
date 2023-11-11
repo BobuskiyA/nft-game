@@ -1,0 +1,16 @@
+.about_project {
+    height: 888px;
+    position: relative;
+}
+  
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    & p:first-child{
+        margin-bottom: 46px;
+    }
+}
